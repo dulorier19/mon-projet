@@ -226,3 +226,8 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,macos
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
