@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Caculator Web</title>
+    <style>
+      body { font-family: sans-serif; margin: 30px; }
+      input[type=number] { width: 100px; }
+      .result { font-weight: bold; color: green; margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator (Addition)</h1>
+    <form method="POST">
+      Nombre 1: <input type="number" name="a" step="any"><br><br>
+      Nombre 2: <input type="number" name="b" step="any"><br><br>
+      <input type="submit" value="Additionner">
+    </form>
+
+    {% if result is not none %}
+      <div class="result">Résultat : {{ result }}</div>
+    {% endif %}
+  </body>
+</html>
+<!doctype html>
+<title>calculator Web</title>
+<h1>calculator (Addition)</h1>
+<form method="POST">
+  Nombre 1: <input type="number" name="a" step="any"><br><br>
+  Nombre 2: <input type="number" name="b" step="any"><br><br>
+  <input type="submit" value="Additionner">
+</form>
+{% if result is not none %}
+  <h2>Résultat : {{ result }}</h2>
+{% endif %}
+
